@@ -1,0 +1,7 @@
+{% extends 'layout/default.html' %}
+{% block title %}Jinja2 наследование{% endblock %}
+{% block content %}
+{{ super() }}
+<h1>{{ self.title() }}</h1>
+<p>Наследование (расширение) шаблонов</p>
+{% endblock %}
